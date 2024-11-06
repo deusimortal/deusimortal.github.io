@@ -40,6 +40,7 @@ body {
 }
 
 .achievement {
+    flex: 1 1 30%;
     margin: 10px; /* Margem entre as conquistas */
     text-align: center; /* Centraliza o texto abaixo da imagem */
 }
@@ -48,10 +49,7 @@ body {
     max-width: 100px; /* Tamanho fixo para as imagens das conquistas */
     height: auto; /* Mantém a proporção da imagem */
     margin-bottom: 5px; /* Espaço abaixo da imagem */
-}
-
-.achievement-text {
-    text-align: left; /* Alinha o texto à esquerda */
+    min-width: 150px;
 }
 
 .projects-section {
