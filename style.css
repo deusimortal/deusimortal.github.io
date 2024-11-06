@@ -4,78 +4,51 @@ body {
     padding: 0;
     background-color: #f5f5f5;
 }
+
 .container {
-    width: 80%;
-    margin: 0 auto;
-    padding: 20px;
+    display: flex;
+    flex-direction: column; /* Alinha as seções verticalmente */
+    align-items: center;
     background-color: #fff;
 }
-.profile-section, .achievements-section, .projects-section, .data-overview-section {
-    margin-bottom: 40px;
+
+.profile-section {
+    display: flex; /* Adiciona o display flex */
+    align-items: flex-start; /* Alinha a imagem e o texto ao topo */
+    margin-bottom: 40px; /* Espaçamento inferior */
 }
+
 .profile-section img {
-    width: 100%;
-    max-width: 300px;
-    border-radius: 10px;
+    margin-right: 20px; /* Espaçamento entre a imagem e o texto */
 }
-.profile-section h2 {
-    font-size: 24px;
-    margin-top: 20px;
+
+.profile-text {
+    max-width: 600px; /* Limita a largura do texto */
 }
-.profile-section p {
-    font-size: 16px;
-    color: #666;
-}
-.achievements-section h2, .projects-section h2, .data-overview-section h2 {
-    font-size: 24px;
-    text-align: center;
-    margin-bottom: 20px;
-}
-.achievements-section .achievement {
-    display: inline-block;
-    width: 30%;
-    text-align: center;
-    margin: 0 1.5%;
-}
-.achievements-section .achievement img {
-    width: 100%;
-    max-width: 100px;
-}
-.achievements-section .achievement p {
-    font-size: 14px;
-    margin-top: 10px;
-}
-.projects-section .project {
-    display: inline-block;
-    width: 45%;
-    margin: 0 2.5%;
+
+.achievements-section, .projects-section, .data-overview-section {
+    width: 100%; /* Garante que as seções ocupem toda a largura */
     padding: 20px;
-    background-color: #f9f9f9;
-    border-radius: 10px;
+    background-color: #eaeaea;
+    margin-bottom: 20px; /* Espaçamento entre seções */
 }
-.projects-section .project img {
-    width: 100%;
-    max-width: 100px;
+
+.achievement, .project {
+    display: flex; /* Adiciona o display flex */
+    align-items: center; /* Alinha verticalmente ao centro */
+    margin-bottom: 10px; /* Espaçamento entre conquistas e projetos */
 }
-.projects-section .project h3 {
-    font-size: 18px;
-    margin-top: 10px;
+
+.achievement img, .project img {
+    margin-right: 10px; /* Espaçamento entre a imagem e o texto */
 }
-.projects-section .project p {
-    font-size: 14px;
-    color: #666;
+
+.data-overview {
+    display: flex; /* Adiciona o display flex */
+    flex-direction: column; /* Alinha os elementos verticalmente */
+    align-items: flex-start; /* Alinha à esquerda */
 }
-.projects-section .project a {
-    display: block;
-    margin-top: 10px;
-    font-size: 14px;
-    color: #007bff;
-    text-decoration: none;
-}
-.data-overview-section .data-overview {
-    text-align: center;
-    margin-bottom: 20px;
-}
+
 .data-overview-section .data-overview button {
     padding: 10px 20px;
     font-size: 16px;
@@ -85,6 +58,7 @@ body {
     border-radius: 5px;
     cursor: pointer;
 }
+
 .data-overview-section .data-overview input {
     width: 100%;
     padding: 10px;
@@ -93,11 +67,12 @@ body {
     border: 1px solid #ccc;
     border-radius: 5px;
 }
-.data-overview-section .chart {
+
+.chart {
+    margin-top: 20px; /* Espaçamento superior para o gráfico */
+}
+
+.chart img {
     width: 100%;
     max-width: 600px;
-    margin: 0 auto;
-}
-.data-overview-section .chart img {
-    width: 100%;
 }
