@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+.container {
+    display: flex;
+    flex-direction: column; /* Alinha as seções verticalmente */
+    align-items: center;
+    background-color: #fff;
+}
+
+.profile-section {
+    display: flex; /* Alinha a imagem e o texto lado a lado */
+    align-items: flex-start; /* Alinha a imagem e o texto ao topo */
+    margin: 20px; /* Margem ao redor da seção */
+}
+
+.profile-section img {
+    max-width: 300px; /* Limita a largura da imagem */
+    height: auto; /* Mantém a proporção da imagem */
+    margin-right: 20px; /* Espaço entre a imagem e o texto */
+}
+
+.profile-text {
+    max-width: 600px; /* Limita a largura do texto */
+}
+
+.achievements-section {
+    margin: 20px; /* Margem para a seção de conquistas */
+    width: 100%; /* Garante que a seção ocupe toda a largura disponível */
+}
+
+.achievement-container {
+    display: flex; /* Alinha as conquistas lado a lado */
+    justify-content: center;
+    flex-wrap: wrap; /* Permite que as conquistas quebrem para a linha seguinte, se necessário */
+}
+
+.achievement {
+    margin: 10px; /* Margem entre as conquistas */
+    text-align: center; /* Centraliza o texto abaixo da imagem */
+}
+
+.achievement img {
+    max-width: 100px; /* Tamanho fixo para as imagens das conquistas */
+    height: auto; /* Mantém a proporção da imagem */
+    margin-bottom: 5px; /* Espaço abaixo da imagem */
+}
+
+.achievement-text {
+    text-align: left; /* Alinha o texto à esquerda */
+}
+
+.projects-section {
+    margin: 20px; /* Margem para a seção de projetos */
+    width: 100%; /* Garante que a seção ocupe toda a largura disponível */
+}
+
+.project-container {
+    display: flex; /* Alinha os projetos lado a lado */
+    flex-wrap: wrap; /* Permite que os projetos quebrem para a linha seguinte, se necessário */
+    justify-content: space-between;
+}
+
+.project {
+    flex: 1 1 30%;
+    margin: 10px; /* Margem entre os projetos */
+    text-align: center; /* Centraliza o texto abaixo da imagem */
+    min-width: 150px;
+}
+
+.project img {
+    max-width: 100px; /* Tamanho fixo para as imagens dos projetos */
+    height: auto; /* Mantém a proporção da imagem */
+    margin-bottom: 5px; /* Espaço abaixo da imagem */
+}
+.data-overview-section {
+    margin: 20px; /* Margem para a seção de visão geral de dados */
+    width: 100%; /* Garante que a seção ocupe toda a largura disponível */
+}
+
+.data-overview {
+    display: flex; /* Alinha os elementos da visão geral de dados */
+    flex-direction: column; /* Alinha verticalmente */
+    align-items: flex-start; /* Alinha à esquerda */
+}
+
+.chart {
+    margin-top: 20px; /* Espaço acima do gráfico */
+}
