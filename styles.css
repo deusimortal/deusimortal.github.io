@@ -2,14 +2,14 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f5f5f5;
+    /*background-image: url("imagens/background1.png");*/
+    background-color: #cccccc;
 }
 
 .container {
     display: flex;
     flex-direction: column; /* Alinha as seções verticalmente */
     align-items: center;
-    background-color: #fff;
 }
 
 .profile-section {
