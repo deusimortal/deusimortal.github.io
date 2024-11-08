@@ -2,7 +2,6 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    /*background-image: url("imagens/background1.png");*/
     background-color: #cccccc;
 }
 
@@ -16,6 +15,9 @@ body {
     display: flex; /* Alinha a imagem e o texto lado a lado */
     align-items: flex-start; /* Alinha a imagem e o texto ao topo */
     margin: 20px; /* Margem ao redor da seção */
+    background-color: #f0f8ff;
+    padding: 20px;
+    border-radius: 8px;
 }
 
 .profile-section img {
@@ -30,26 +32,22 @@ body {
 
 .achievements-section {
     margin: 20px; /* Margem para a seção de conquistas */
-    width: 100%; /* Garante que a seção ocupe toda a largura disponível */
 }
 
-.achievement-container {
-    display: flex; /* Alinha as conquistas lado a lado */
-    justify-content: center;
-    flex-wrap: wrap; /* Permite que as conquistas quebrem para a linha seguinte, se necessário */
+.card {
+    max-width: 200px; /* Define uma largura máxima para os cards */
+    margin: auto; /* Centraliza o card dentro da coluna */
+    min-height: 150px;
+    text-align: center;
 }
 
-.achievement {
-    flex: 1 1 30%;
-    margin: 10px; /* Margem entre as conquistas */
-    text-align: center; /* Centraliza o texto abaixo da imagem */
+.card-img-top {
+    max-height: 200px; /* Limita a altura da imagem do card */
+    object-fit: cover; /* Faz com que a imagem cubra a área sem distorcer */
 }
 
-.achievement img {
-    max-width: 100px; /* Tamanho fixo para as imagens das conquistas */
-    height: auto; /* Mantém a proporção da imagem */
-    margin-bottom: 5px; /* Espaço abaixo da imagem */
-    min-width: 150px;
+.row {
+    justify-content: center; /* Centraliza os cards na linha */
 }
 
 .projects-section {
@@ -74,18 +72,4 @@ body {
     max-width: 100px; /* Tamanho fixo para as imagens dos projetos */
     height: auto; /* Mantém a proporção da imagem */
     margin-bottom: 5px; /* Espaço abaixo da imagem */
-}
-.data-overview-section {
-    margin: 20px; /* Margem para a seção de visão geral de dados */
-    width: 100%; /* Garante que a seção ocupe toda a largura disponível */
-}
-
-.data-overview {
-    display: flex; /* Alinha os elementos da visão geral de dados */
-    flex-direction: column; /* Alinha verticalmente */
-    align-items: flex-start; /* Alinha à esquerda */
-}
-
-.chart {
-    margin-top: 20px; /* Espaço acima do gráfico */
 }
