@@ -4,6 +4,17 @@ body {
     padding: 0;
     background-color: #cccccc;
 }
+.navbar {
+    background-color: #003366; /* Altere para a cor desejada */
+}
+
+.navbar .nav-link {
+    color: white; /* Cor do texto dos links */
+}
+
+.navbar .nav-link:hover {
+    color: #ffcc00; /* Cor do texto dos links ao passar o mouse */
+}
 
 .container {
     display: flex;
@@ -72,4 +83,26 @@ body {
     max-width: 100px; /* Tamanho fixo para as imagens dos projetos */
     height: auto; /* Mantém a proporção da imagem */
     margin-bottom: 5px; /* Espaço abaixo da imagem */
+}
+
+.contact-bar {
+    background-color: #003366; /* Azul escuro */
+    color: white; /* Texto em branco */
+    padding: 10px 0; /* Espaçamento vertical */
+    margin-top: 20px; /* Espaçamento acima da barra */
+}
+
+.contact-bar h4 {
+    margin-bottom: 10px; /* Espaçamento abaixo do título */
+    display: flex;
+    justify-content:flex-start;
+}
+
+.contact-bar p {
+    margin: 0; /* Remove margens dos parágrafos */
+    display: flex;
+    justify-content: flex-end;
+}
+.contact-bar a{
+    color: white;
 }
